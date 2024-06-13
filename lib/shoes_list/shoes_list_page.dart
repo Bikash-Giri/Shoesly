@@ -31,6 +31,20 @@ class HomePage extends StatelessWidget {
             );
           } else if (state is ShoesLoaded) {
             print(state.model);
+            return GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, // Number of columns
+                crossAxisSpacing: 10.0,
+                mainAxisSpacing: 10.0,
+                childAspectRatio:
+                    0.5, // Adjust aspect ratio to match desired design
+              ),
+              itemCount: 20,
+              itemBuilder: (context, index) {
+                return ShoeItem(index: index);
+              },
+              padding: EdgeInsets.all(10.0),
+            );
             // return ListView.builder(
             //   itemCount: state.model.
             //   itemBuilder: (context, index) {
@@ -44,5 +58,15 @@ class HomePage extends StatelessWidget {
         },
       ),
     );
+  }
+}
+
+class ShoeItem extends StatelessWidget {
+  final int index;
+  const ShoeItem({required this.index});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
