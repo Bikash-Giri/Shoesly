@@ -41,7 +41,7 @@ class Shoe {
   String? name;
   String? image;
   String? url;
-  String? price;
+  double? price;
   double? rating;
   int? numberOfReviews;
   List<int>? size;
@@ -64,7 +64,7 @@ class Shoe {
         name: json["name"],
         image: json["image"],
         url: json["url"],
-        price: json["price"],
+        price: json["price"]?.toDouble(),
         rating: json["rating"]?.toDouble(),
         numberOfReviews: json["number_of_reviews"],
         size: json["size"] == null
@@ -103,7 +103,7 @@ final descriptionValues = EnumValues({
 
 class Review {
   String? reviewerName;
-  int? rating;
+  double? rating;
   String? description;
   Date? date;
 
@@ -116,7 +116,7 @@ class Review {
 
   factory Review.fromJson(Map<String, dynamic> json) => Review(
         reviewerName: json["reviewer_name"],
-        rating: json["rating"],
+        rating: json["rating"].toDouble(),
         description: json["description"]!,
         date: dateValues.map[json["date"]]!,
       );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shoesly/resources/theme.dart'; // ignore: import_of_legacy_library_into_null_safe
+import 'package:shoesly/resources/src/theme.dart'; // ignore: import_of_legacy_library_into_null_safe
 
 class ThemeBloc extends Cubit<ShoeslyTheme> {
   ThemeBloc({ThemeMode themeMode = ThemeMode.light})

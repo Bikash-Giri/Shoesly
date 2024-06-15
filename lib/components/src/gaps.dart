@@ -1,6 +1,6 @@
 // Copyright (c) 2020 The Khalti Authors. All rights reserved.
 import 'package:flutter/material.dart';
-import 'package:shoesly/resources/dimens.dart';
+import 'package:shoesly/resources/src/dimens.dart';
 
 /// Vertical gap widget
 class VerticalGap extends StatelessWidget {

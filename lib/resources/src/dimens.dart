@@ -106,3 +106,50 @@ const double d_iconXXXXXL = 120;
 ///
 /// Horizontal Gap, generally between two form fields.
 const double d_horizontalGap = 10;
+
+// ------------------ Button -------------------------------
+
+/// 50
+///
+/// Button Height for Big/Large buttons
+const double d_buttonHeight = 50;
+
+/// 36
+///
+/// Button Height for Mini button
+const double d_buttonHeightMini = 46;
+
+/// 78
+const double d_miniButtonMinWidth = 78;
+
+/// 108
+const double d_miniButtonMaxWidth = 108;
+
+/// 92
+///
+/// For buttons that's inline with title. Like "SEE SAMPLE" button.
+const double d_smallButtonMinWidthAlt = 92;
+
+/// 144
+const double d_smallButtonMinWidth = 144;
+
+/// 160
+const double d_smallButtonMaxWidth = 160;
+
+/// 200
+const double d_largeButtonMinWidth = 150;
+
+/// 250
+const double d_largeButtonMaxWidth = 250;
+
+/// 121
+const double d_textButtonWithIconMinWidth = 121;
+
+/// 122
+const double d_uploadButtonMinHeight = 122;
+
+/// 104
+const double d_choiceButtonMinWidth = 104;
+
+/// 44
+const double d_choiceButtonMinHeight = 44;

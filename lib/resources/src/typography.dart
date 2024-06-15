@@ -183,4 +183,7 @@ extension ShoeslyTextThemeExtension on TextTheme {
 
   TextStyle get agHeadline300 => GoogleFonts.agbalumo(
       fontSize: 13, fontWeight: FontWeight.normal, fontStyle: FontStyle.normal);
+
+  TextStyle get agHeadline600 => GoogleFonts.agbalumo(
+      fontSize: 30, fontWeight: FontWeight.normal, fontStyle: FontStyle.normal);
 }

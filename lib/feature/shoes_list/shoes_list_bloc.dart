@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shoesly/shoes_list/shoes_service.dart';
+import 'package:shoesly/feature/shoes_list/shoes_service.dart';
 
 import 'model/shoes_model.dart';
 
