@@ -2,8 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shoesly/resources/dimens.dart';
-import 'package:shoesly/resources/theme_bloc.dart';
+import 'package:shoesly/resources/src/dimens.dart';
+import 'package:shoesly/resources/src/theme_bloc.dart';
 import 'package:vector_graphics/vector_graphics.dart' show AssetBytesLoader;
 
 enum _ImageSourceType { asset, network }
