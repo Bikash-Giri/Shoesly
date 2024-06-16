@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shoesly/shoes_list/shoes_service.dart';
+import 'package:shoesly/feature/shoes_list/shoes_service.dart';
 
 import 'model/shoes_model.dart';
 
@@ -14,7 +14,7 @@ abstract class ShoesState {}
 class ShoesInitial extends ShoesState {}
 
 class ShoesLoaded extends ShoesState {
-  final ShoeModel? model;
+  final ShoesModel? model;
 
   ShoesLoaded(this.model);
 }
@@ -26,8 +26,9 @@ class ShoesBloc extends Bloc<ShoesBaseEvent, ShoesState> {
         super(ShoesInitial()) {
     on<FetchShoesEvent>(
       (event, emit) async {
-        final shoe = await _shoesService.fetchShoesList();
-        emit(ShoesLoaded(shoe));
+        final model = await _shoesService.fetchShoesList();
+        print(model);
+        emit(ShoesLoaded(model));
       },
     );
   }

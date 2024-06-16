@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shoesly/resources/theme_bloc.dart';
 import 'package:shoesly/shoes_list/shoes_list_page.dart';
 
 void main() async {
@@ -13,13 +15,15 @@ void main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(),
-    );
+    return BlocProvider(
+        child: MaterialApp(
+          title: 'Flutter Demo',
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+          ),
+          home: MyHomePage(),
+        ),
+        create: (BuildContext context) => ThemeBloc());
   }
 }
 
